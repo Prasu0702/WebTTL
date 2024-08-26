@@ -1,0 +1,61 @@
+
+footer {
+  position: relative; /* Fixed position */
+  left: 0; /* Align to the left */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Full width */
+  height: min-content;
+  background: black; /* Background color - change as needed */
+  color: #333; /* Text color - change as needed */
+  z-index: 1000; /* Ensure the footer is above other content */
+} 
+
+
+.footer-content {
+  display: fixed;
+  justify-content: space-between; /* Space out the content */
+  align-items: center; /* Align vertically */
+  padding: 1rem; /* Add some padding */
+  color: #ffff;
+  font-size: .7rem;
+  text-align-last: center;
+
+}
+
+.footer-left {
+  text-align: left; /* Align the text to the left */
+}
+
+.footer-right {
+  text-align: right; /* Align the text to the right */
+}
+
+.back-to-top {
+  cursor: pointer; /* Change the mouse pointer on hover */
+  /* Add any additional styling you want for the link */
+  text-align-last: center;
+  font-size: .7rem;
+}
+
+/* If you want to ensure the footer sticks to the bottom of the page: */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto; /* Grow to fill available space */
+}
+
+footer {
+  flex-shrink: 0; /* Don't shrink the footer */
+}
+/* Add padding to the bottom of the content container */
+.content-container {
+  padding-bottom: 50px; /* Adjust the value to match your footer's height */
+}

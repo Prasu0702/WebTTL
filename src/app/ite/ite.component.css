@@ -1,0 +1,57 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the columns */
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box; /* Border and padding are included in the element's width */
+}
+
+.left-content, .right-content {
+    box-sizing: border-box;
+    width: 50%; /* Each takes up half the container */
+    padding: 30px; /* Remove padding entirely */
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch; /* Makes sure that children also stretch to the full width */
+}
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch; /* Makes sure that children also stretch to the full width */
+}
+.form {
+    width: 100%; /* Ensures the form takes full width */
+    padding: 0; /* Remove any padding that might be restricting the form */
+}
+
+iframe {
+    width: 100%; /* Ensures the iframe takes the full width of its parent */
+    height: 600px; /* Fixed height as per your setup */
+    border: none; /* Removes any default styling */
+    padding: 0; /* Ensures no padding inside the iframe */
+    margin: 0; /* Ensures no margin around the iframe */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-content, .right-content {
+        width: 100%; /* Full width in mobile view */
+        padding: 0; /* Removes padding in mobile view for edge-to-edge content */
+    }
+}

@@ -1,0 +1,29 @@
+.student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.student-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.student-photo {
+    width: 150px;  /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+}
+.linkedin-icon {
+    margin-left: 10px; /* Add some space between the name and the icon */
+}
+
+/* Optional: Style the icon size if it's too big or too small */
+.linkedin-icon i {
+    font-size: 1.5rem; /* Adjust the size as needed */
+}
+

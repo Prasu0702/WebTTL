@@ -1,0 +1,34 @@
+.alumni-content {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.375rem; /* Base font size for larger displays, equivalent to 22px */
+  }
+  
+  /* Adjust the font size on smaller screens */
+  @media (max-width: 768px) {
+    .alumni-content {
+      font-size: 1rem; /* Smaller font size for mobile devices, equivalent to 16px */
+    }
+  }
+  
+  /* Optionally, you can add more breakpoints for finer control */
+  @media (max-width: 768px) { /* For medium devices like tablets */
+    .alumni-content {
+      font-size: 1rem; /* Slightly larger than for mobile */
+    }
+  }
+ 
+  @media (min-width: 1200px) { /* For large desktops */
+    .alumni-content {
+      font-size: 1rem; /* If you want it slightly larger on very large screens */
+    }
+  }
+  
+  .linkedin-icon {
+    margin-left: 2px; /* Add some space between the name and the icon */
+}
+
+/* Optional: Style the icon size if it's too big or too small */
+.linkedin-icon i {
+    font-size: 1rem; /* Adjust the size as needed */
+}

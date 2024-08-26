@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-red">
+  <div class="container-fluid">
+    <!-- Logo, TransTech Lab, and Navigation Links -->
+    <img src="assets/TTULOGO.png" alt="Logo" class="navbar-brand me-2" style="height: 40px;">
+    <a class="navbar-brand">Trans Tech Lab</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <!-- People with Horizontal Submenu -->
+        <li class="nav-item dropdown">
+          <a id="peopleDropdown" role="button" data-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">People</a>
+          <ul class="dropdown-menu" aria-labelledby="peopleDropdown">
+            <li><a class="dropdown-item" href="/people/dr-liu">Professor</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/people/phd">Ph.D.</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/people/masters">Masters</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/people/undergrad">UnderGrad</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/people/alumni">Alumni</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/data">Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ite">ITE Chapter</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchTerm" (keyup.enter)="executeSearch()" (input)="checkInput()">
+      <button class="btn btn-outline-light" type="submit" (click)="executeSearch()">Search</button>
+    </div>
+  </div>
+  <div *ngIf="searchNotFound" class="alert alert-danger mt-2">Not found</div>
+</nav>

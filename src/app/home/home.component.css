@@ -1,0 +1,133 @@
+/* Carousel Styles */
+.content-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* Adjust the ratio as needed */
+  gap: 20px; /* This adds some space between the carousel and the about us section */
+  flex-wrap: nowrap;
+}
+.fullscreen-carousel {
+  max-width: calc(100vw - 20vw); /* Decrease total width by 20vw to create a gap on both sides */
+  margin: 8vh auto 0 auto; /* 10vh top margin, auto on the sides to center, 0 at the bottom */
+}
+
+#myCarousel {
+  flex: 1; /* Allow the carousel to grow and fill the space */
+  max-width: 100%; /* Adjust the percentage as needed */
+}
+
+.fullscreen-carousel .carousel-inner, .fullscreen-carousel .carousel-item {
+  padding-top: 20px;
+  padding-right: 50px;
+  width: 100%;
+  height: 100%; /* This will maintain the aspect ratio of the images */
+}
+
+/* Adjust the image size within the carousel */
+.fullscreen-carousel .carousel-item img {
+  width: 100%; /* This will ensure the image is fully responsive within the container */
+  object-fit: cover; /* Cover the area of the container without stretching */
+  object-position: center; /* Center the image within its container */
+}
+
+.about-us-container {
+  flex: 1; /* Allow the about us section to grow and fill the space */
+  max-width: 100%; /* Adjust the percentage as needed */
+  padding-left: 10px; /* Add some space between the carousel and the about us section */
+  padding-right: 10px; /* Add some space between the carousel and the about us section */
+  padding-top: 85px;
+}
+
+/* Carousel Controls - make sure they are visible and appropriately sized */
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Offset the position by half the height to truly center */
+  z-index: 2; /* Ensure they're above the images */
+  opacity: 1; /* Make sure they're not transparent */
+  /* color: #fff; Adjust the color as needed */
+}
+
+/* Previous button on the left */
+.carousel-control-prev {
+  left: 15px; /* Position from the left */
+}
+
+/* Next button on the right */
+.carousel-control-next {
+  right: 15px; /* Position from the right */
+}
+
+/* The icons within the controls use a font or SVG background */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem; /* Size of the icon */
+  height: 2rem; /* Size of the icon */
+  background: no-repeat 50%/100% 100%; /* Center and scale the background image */
+}
+
+/* If using Bootstrap's default icons, they may be included as fonts, not images */
+/* Here is how you might override Bootstrap's default styles if the icons are not appearing */
+.carousel-control-prev-icon {
+  background-image: none; /* Remove any existing background image */
+}
+
+.carousel-control-next-icon {
+  background-image: none; /* Remove any existing background image */
+}
+
+/* If icons are fonts, add custom content */
+.carousel-control-prev-icon::before {
+  content: '\2039'; /* The HTML entity for a "left-pointing" angle quote, which looks like an arrow */
+  font-size: 2rem; /* Size of the font icon */
+}
+
+.carousel-control-next-icon::before {
+  content: '\203a'; /* The HTML entity for a "right-pointing" angle quote, which looks like an arrow */
+  font-size: 2rem; /* Size of the font icon */
+}
+
+
+
+
+/* Section Styles */
+section {
+  padding: 20px; /* Padding for smaller screens */
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Adjust padding for larger screens */
+@media (min-width: 768px) {
+  section {
+      padding: 20px 50px;
+  }
+}
+
+
+.logos a img {
+  width: 100%; /* Full width of the container */
+  max-width: 200px; /* Maximum width of the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust logos for medium and larger screens */
+@media (min-width: 768px) {
+  .logos a, .logos img {
+      max-width: 150px; /* Adjust max-width for medium screens */
+      margin: 15px 30px; /* Larger margin */
+  }
+}
+
+/* Further adjust for larger desktop screens */
+@media (min-width: 992px) {
+  .logos a, .logos img {
+      max-width: 200px; /* Adjust max-width for large screens */
+  }
+}
+
+/* Adjust for very large screens if necessary */
+@media (min-width: 1200px) {
+  .logos a, .logos img {
+      max-width: 250px; /* Adjust max-width for very large screens */
+  }
+}

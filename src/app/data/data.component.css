@@ -1,0 +1,102 @@
+.fullscreen-carousel, .carousel-inner, .carousel-item {
+  width: 100%; /* Ensure carousel takes the full width of its container */
+  max-height: 100vh; /* Max height to full viewport, but allow it to be smaller if content is not as tall */
+  overflow: hidden;
+  height: 100vh; 
+}
+
+/* Make the carousel responsive */
+.fullscreen-carousel .carousel-item img {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+  object-position: center;
+}
+
+.carousel-inner img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Adjust height automatically */
+  object-fit: cover; /* Cover the area of the container */
+}
+.container-fluid {
+  width: 100%; /* Full width of the parent element */
+  margin-top:50px; /* Adjust this value to increase or decrease the space */
+  padding-top: 20px;
+}
+.featurette .image-container img {
+  width: 90%; /* Make the image take up the full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Cover the container without stretching */
+  max-width: none; /* Allow the image to grow beyond its intrinsic size */
+  max-height: 80vh; /* You can adjust this value to control the maximum height */
+}
+.featurette .image-container {
+  width: 90%; /* Ensure the container takes the full width of the parent */
+  height: auto; /* Adjust height automatically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid {
+  padding: 0; /* Remove default padding */
+  margin-top: 50px; /* Adjust the top margin */
+  padding-top: 20px;
+}
+
+.featurette {
+  margin-bottom: 30px; /* Add some space between the featurettes */
+}
+
+/* Style for the container to eliminate default padding */
+.container {
+  padding: 0; /* Removes padding, adjust as needed if some padding is desired */
+}
+
+/* Adjustments for the flex container to ensure items are aligned without much space */
+.d-flex.align-items-center.justify-content-start {
+  gap: 10px; /* Adjust this value for the space between the h5 and the button */
+}
+/* Reduce the margin above the <p> tag following the carousel */
+#myCarousel + p {
+  margin-top: 5px; /* Adjust this value to reduce the space */
+  margin-bottom: 0; /* Remove additional bottom margin if not needed */
+}
+
+.centered-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-image {
+  max-width: 100%; /* Ensures the image is responsive and fits within the container */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+/* You can add more styles as needed for other elements */
+
+
+.custom-button {
+  padding: 10px 10px; /* Size of the button */
+  background-color: #007bff; /* Background color */
+  color: #ffffff; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Text size */
+  cursor: pointer; /* Mouse pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+.container-fluid {
+  width: 100%; /* Full width of the parent element */
+}
+/* Remove the hover effect by simply not changing any properties on hover */
+.custom-button:hover, .custom-button:focus {
+  background-color: #007bff; /* Same background color as the normal state */
+  color: #ffffff; /* Same text color as the normal state */
+  outline: none; /* Remove the outline on focus for accessibility, you might want to handle focus differently */
+}
+
+/* Optional: Add a focus style for accessibility */
+.custom-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

@@ -1,0 +1,28 @@
+/* Custom Footer Styles for Alumni Page */
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: black; /* Custom background color for Alumni page */
+    color: #fff;
+    z-index: 1000;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    flex-direction: column;
+  }
+  
+  .back-to-top {
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  

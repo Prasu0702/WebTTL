@@ -1,0 +1,136 @@
+/* Custom Header Styles */
+.bg-red {
+    background-color: #ee2e24;
+}
+
+/* Header responsiveness */
+.nav-link, .dropdown-item {
+    font-size: 1.2rem; /* Larger base font size */
+}
+
+.nav-link {
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+  }
+  
+  .nav-link:hover, .dropdown:hover .nav-link {
+    background-color: #f8f9fa; /* Light grey background on hover */
+    color: #0056b3; /* Change text color on hover */
+  }
+
+  .dropdown-item:hover {
+    background-color: #e9ecef; /* Slightly darker grey for dropdown items */
+    color: #007bff; /* Change text color for dropdown items */
+  }
+  
+/* Adjusting navbar for smaller screens */
+@media (max-width: 768px) {
+    .nav-link, .dropdown-item {
+        font-size: 1rem; /* Smaller font size for mobile devices */
+    }
+    .navbar-brand {
+        font-size: 1.2rem; /* Smaller brand font size for mobile */
+    }
+    .navbar-logo {
+        height: 50px; /* Smaller logo for mobile devices */
+    }
+    .container {
+        padding-top: 75px; /* Reduced padding for mobile header */
+    }
+}
+
+.navbar-logo {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+}
+
+/* Remove underlines from the buttons */
+.nav-link.btn, .btn, .dropdown-item {
+    text-decoration: none;
+}
+
+/* Adjust padding for the top of the container, considering the fixed navbar */
+.container {
+    padding-top: 95px; /* Adjust this value based on the actual height of your header */
+}
+
+/* Fixed header */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header appears above other content */
+    border-bottom: 2px solid black; /* Adjust the line style and color as needed */
+}
+
+
+/* Style adjustments for navbar items and buttons */
+.nav-link, .navbar-brand, .btn {
+    font-size: 1rem; /* Base font size for readability */
+    font-weight: 500; /* Decrease boldness to 500 */
+    text-decoration: none;
+    color: black !important;
+    margin-right: 10px; /* Adjust this value to your preference */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* Change to a color that suits your design */
+}
+
+/* Dropdown styling */
+.nav-item.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0e0e0e;
+    min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+    border-radius: 30px; /* Rounded corners */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem; /* Consistent font size with other nav items */
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+/* Search bar and button adjustments */
+.form-control {
+    height: auto; /* Allow the height to adjust to content */
+    font-size: 1rem; /* Consistent font size with other nav items */
+}
+
+.btn.btn-outline-light {
+    font-size: 1rem; /* Consistent font size with other nav items */
+    padding: 0.5rem 1rem; /* Proportional padding */
+}
+
+/* Utility styles */
+.icon, .dropdown-divider {
+    margin-right: 10px;
+}
+
+.dropdown-divider {
+    height: 0.5 px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}

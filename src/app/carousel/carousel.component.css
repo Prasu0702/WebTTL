@@ -1,0 +1,6 @@
+/* Make the carousel responsive */
+.fullscreen-carousel .carousel-item img {
+    width: 100%;
+    height: auto; /* Adjust height automatically */
+  }
+  

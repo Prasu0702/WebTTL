@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+/* .popover-dark.bs-popover-bottom .arrow::after, .popover-dark.bs-popover-bottom .arrow::before {
+    border-bottom-color: #343a40;
+}
+
+.popover-dark .popover-body {
+    color: #fff;
+    background-color: #343a40;
+} */
+
+/* Ensure the body and html take up the full viewport height */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*overflow-x: auto; */
+  }
+   
+  /* Responsive font sizing */
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem; /* Adjust base font size */
+  }
+  
+  /* Add responsive typography */
+  @media (max-width: 768px) {
+    body {
+      font-size: .9rem; /* Smaller font size for mobile devices */
+    }
+  }
+  

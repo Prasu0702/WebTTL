@@ -1,0 +1,44 @@
+/* Global container styles */
+.container {
+  max-width: 1200px; /* Adjust based on your design */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding */
+  display: flex;
+}
+
+/* Flex container for content */
+.content-container {
+  display: flex;
+  justify-content: space-between; /* Ensure content is spaced between */
+  gap: 20px; /* Space between text and image */
+}
+
+/* Styles for the professor's information */
+.prof-info {
+  flex: 2; /* Takes up more space relative to the image */
+}
+
+/* Styles for the professor's photo */
+.prof-photo {
+  flex: 1; /* Image takes less space compared to text */
+  display: flex; /* Use flex to center the image */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+.prof-photo img {
+  max-width: 100%; /* Ensure image is responsive and doesn't overflow its container */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; /* Stack the content in one column on small screens */
+  }
+
+  .prof-photo img {
+    max-width: 100%; /* Image takes full width on smaller screens */
+  }
+}

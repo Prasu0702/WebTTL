@@ -1,0 +1,77 @@
+.featurette-divider {
+    margin:0;
+  }
+  
+.featurette {
+  margin-top: 0; /* Removes the top margin from the first featurette */
+}
+
+/* If the h1 has a bottom margin, you can reduce or remove it */
+h1 {
+  margin-bottom: 1.5rem; /* Reduces the bottom margin of the h1 */
+}
+
+/* If the h2 has a top margin, you can reduce or remove it */
+.featurette-heading {
+  margin-top: 5; /* Removes the top margin of the h2 heading */
+}
+
+/* Additional adjustments if needed */
+.container {
+  padding-top: 0; /* Removes the top padding from the container */
+}
+
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+    font-size: 2rem; /* Default font size for larger displays */
+  }
+  
+  /* Adjust the font size on smaller screens */
+  @media (max-width: 768px) {
+    .featurette-heading {
+      font-size: 1.5rem; /* Smaller font size for mobile devices */
+    }
+  }
+  
+  /* You may also want to adjust the paragraph text for smaller screens */
+  @media (max-width: 768px) {
+    .featurette .col-md-12 p {
+      font-size: 0.9rem;
+    }
+  }
+  
+   /* Logos in the Funding Section */
+   .logos a, .logos img {
+    display: inline-block; /* Treat links as inline blocks for proper alignment */
+    margin: 10px; /* Uniform margin */
+}
+
+.logos a img {
+    width: 100%; /* Full width of the container */
+    max-width: 200px; /* Maximum width of the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust logos for medium and larger screens */
+@media (min-width: 768px) {
+    .logos a, .logos img {
+        max-width: 150px; /* Adjust max-width for medium screens */
+        margin: 15px 30px; /* Larger margin */
+    }
+}
+
+/* Further adjust for larger desktop screens */
+@media (min-width: 992px) {
+    .logos a, .logos img {
+        max-width: 200px; /* Adjust max-width for large screens */
+    }
+}
+
+/* Adjust for very large screens if necessary */
+@media (min-width: 1200px) {
+    .logos a, .logos img {
+        max-width: 250px; /* Adjust max-width for very large screens */
+    }
+}
